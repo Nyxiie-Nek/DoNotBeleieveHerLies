@@ -17,14 +17,14 @@ body {
     border-radius: 10px;
   }
   
-  .enter {
+  h1 {
     font-size: 32px;
     text-decoration: none;
     color: white;
     transition: color 0.3s;
   }
   
-  .enter:hover {
+  h1:hover {
     color: pink;
     cursor: pointer;
   }
