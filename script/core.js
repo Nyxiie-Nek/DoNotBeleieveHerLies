@@ -14,7 +14,7 @@ function getHint() {
   function initializeIframe() {
     const iframe = document.getElementById('a');
     // Sempre começa com o primeiro nível
-    iframe.src = "the-first-Time.html";
+    iframe.src = "the-first-time.html";
   }
   
   function submitForm(event) {
