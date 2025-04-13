@@ -38,9 +38,8 @@ body {
   .logo {
     position: absolute;
     top: 30px;
-    left: 50%;
     transform: translateX(-50%);
-    width: 400px;
-    scale: 200%;
+    width: 200px;
+    scale: 100%;
   }
   
