@@ -1,26 +1,21 @@
-body {
-    margin: 0;
-    padding: 0;
-    background: #000000;
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-  }
-  
-.lvlhead {
-    text-align: right;
-    vertical-align: top;
-    padding: 1px;
-    padding-right: 8px;
-    font-size: 18px;
-    color: #808080;
-  }
+.body {
+  padding: 10px;
+  background: #000000;
+  color: #999999;
+}
 
-.levelcontent {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: cover;
-    vertical-align: middle;
-    scale: 75%;
-  }
-  
+.lvlcont {
+  vertical-align: central;
+  text-align: center;
+  padding: 5px;
+  overflow: hidden;
+  color: #999999;
+}
+
+.lvlhead {
+  text-align: right;
+  padding: 1px;
+  padding-right: 8px;
+  font-size: 18px;
+  color: #808080;
+}
