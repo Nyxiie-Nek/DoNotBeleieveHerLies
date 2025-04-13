@@ -8,7 +8,7 @@ body {
     align-items: center;
     font-family: 'Courier New', monospace;
   }
-  
+
   .center {
     text-align: center;
     z-index: 1;
@@ -27,5 +27,14 @@ body {
   .enter:hover {
     color: pink;
     cursor: pointer;
+  }
+  
+  .logo {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px; /* ajusta o tamanho aqui se quiser */
+    opacity: 0.9;
   }
   
