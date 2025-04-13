@@ -22,7 +22,8 @@ body {
   left: 50%;
   transform: translateX(-50%);
   width: 500px;
-  max-width: 90%;
+  max-width: 100%;
+  scale: 5em;
   z-index: 10;
 }
 
