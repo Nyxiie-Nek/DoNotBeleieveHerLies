@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>Do Not Believe Our Lies</title>
+    <link rel="icon" href="/images/dnbyl.jpg">
+    <link href="/demo/style.css" rel="stylesheet">
+    <script src="/demo/jquery.js"></script>
+    <script src="/demo/html.js"></script>
+</head>
+
+<body class="body" onload="initializeIframe(); document.getElementById('inputField').focus();">
+    <form id="form1" onsubmit="submitForm(event)">
+        <table style="width: 100%;">
+            <tr>
+                <td><a href="index.html"><img src="/images/dnbol-logo.png" width="300"></a></td>
+                <td style="text-align: right;">
+                    <input id="inputField" name="inputField" placeholder="Answer">
+                    <button type="submit">Enter Code</button>
+                </td>
+            </tr>
+        </table>
+        <hr>
+    </form>
+    <iframe id="a" name="a" frameborder="0" width="100%" height="900"></iframe>
+    <center>
+        <div id="hintBox">
+            <button id="b" onclick="getHint()">Hint</button>
+        </div>
+    </center>
+    <script>
+        let currentHint = "";
+
+        // Função para pegar a dica do iframe
+        function getHint() {
+            const iframe = document.getElementById('a');
+            try {
+                const iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
+                // Alterando para buscar o elemento com a classe 'hint' ao invés de 'body'
+                const hintElement = iframeDocument.querySelector('.hint'); // Agora ele procura pela classe 'hint'
+                const hintText = hintElement ? hintElement.innerText : "-no hint available-"; // Mostra o texto da dica
+                alert(hintText); // Exibe a dica em um alert
+                currentHint = hintText; // Armazena a dica atual
+            } catch (e) {
+                console.error("Erro ao acessar o conteúdo do iframe:", e);
+                alert("Não foi possível acessar a dica.");
+            }
+        }
+
+        // Função para lidar com a mudança do src do iframe
+        function onIframeSrcChange() {
+            const iframe = document.getElementById('a');
+            const currentSrc = iframe.src;
+            localStorage.setItem('iframeSrc', currentSrc); // Salva o src atual no localStorage
+        }
+
+        // Função para inicializar o iframe
+        function initializeIframe() {
+            const iframe = document.getElementById('a');
+            const savedSrc = localStorage.getItem('iframeSrc');
+            
+            if (savedSrc) {
+                iframe.src = savedSrc; // Carrega o src salvo, se existir
+            } else {
+                iframe.src = '/demo/1.html'; // Carrega um src padrão
+            }
+
+            iframe.addEventListener('load', onIframeSrcChange); // Adiciona o evento load para quando o iframe for carregado
+        }
+
+        // Inicializa o iframe ao carregar a página
+        window.onload = initializeIframe;
+    </script>
+</body>
+
+</html>
