@@ -1,44 +1,46 @@
 @font-face {
-    font-family: "Chalkduster";
-    src: url(../fonts/Chalkduster.ttf) format('truetype');
-  }
-  
-  body {
-    margin: 0;
-    padding: 0;
-    background: url(../img/mainbg.jpg) no-repeat center center fixed;
-    background-size: cover;
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    font-family: "Chalkduster", cursive, sans-serif;
-  }
-  
-  .logo {
-    display: block;
-    margin: 40px auto 20px;
-    width: 300px;
-  }
-  
-  .enter-button {
-    display: block;
-    margin: 100px auto;
-    font-size: 48px;
-    font-family: "Chalkduster", cursive;
-    color: white;
-    background: none;
-    border: none;
-    cursor: pointer;
-    animation: glow 1.5s ease-in-out infinite alternate;
+  font-family: "Chalkduster";
+  src: url(../fonts/Chalkduster.ttf) format('truetype');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url(../img/mainbg.jpg) no-repeat center center fixed;
+  background-size: cover;
+  font-family: "Chalkduster", cursive, sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 300px;
+  height: auto;
+  margin-bottom: 40px;
+  margin-top: 20px;
+  display: block;
+}
+
+.enter-button {
+  font-size: 48px;
+  font-family: "Chalkduster", cursive;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+  animation: glow 1.5s ease-in-out infinite alternate;
+  text-shadow: 0 0 10px white, 0 0 20px #ff3c00;
+  margin-top: 40px;
+}
+
+@keyframes glow {
+  from {
     text-shadow: 0 0 10px white, 0 0 20px #ff3c00;
   }
-  
-  @keyframes glow {
-    from {
-      text-shadow: 0 0 10px white, 0 0 20px #ff3c00;
-    }
-    to {
-      text-shadow: 0 0 20px white, 0 0 30px #ff0000, 0 0 40px #ff0000;
-    }
+  to {
+    text-shadow: 0 0 20px white, 0 0 30px #ff0000, 0 0 40px #ff0000;
   }
-  
+}
