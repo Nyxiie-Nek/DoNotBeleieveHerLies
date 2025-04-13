@@ -26,8 +26,7 @@ function submitForm(event) {
 
   const input = document.getElementById('inputField').value
     .toLowerCase()
-    .replace(/\s+/g, '') // remove todos os espaços
-    .trim();
+    .replace(/\s+/g, ""); // remove todos os espaços
 
   if (input) {
     document.getElementById('a').src = `${input}.html`;
