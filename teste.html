@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
-    <title>Do Not Believe Our Lies</title>
-    <link rel="icon" href="/images/dnbyl.jpg">
+    <title>Do Not Believe Her Lies</title>
+    <link rel="icon" href="img/dnbherlogo.png">
     <link href="/demo/style.css" rel="stylesheet">
     <script src="/demo/jquery.js"></script>
     <script src="/demo/html.js"></script>
@@ -16,7 +16,7 @@
     <form id="form1" onsubmit="submitForm(event)">
         <table style="width: 100%;">
             <tr>
-                <td><a href="index.html"><img src="/images/dnbol-logo.png" width="300"></a></td>
+                <td><a href="index.html"><img src="img/dnbherlogo.png" width="300"></a></td>
                 <td style="text-align: right;">
                     <input id="inputField" name="inputField" placeholder="Answer">
                     <button type="submit">Enter Code</button>
@@ -32,7 +32,7 @@
         </div>
     </center>
     <script>
-        let currentHint = "";
+        let currentHint = "No Hints XD";
 
         // Função para pegar a dica do iframe
         function getHint() {
@@ -65,7 +65,7 @@
             if (savedSrc) {
                 iframe.src = savedSrc; // Carrega o src salvo, se existir
             } else {
-                iframe.src = '/demo/1.html'; // Carrega um src padrão
+                iframe.src = "thefisrttime.html"; // Carrega um src padrão
             }
 
             iframe.addEventListener('load', onIframeSrcChange); // Adiciona o evento load para quando o iframe for carregado
