@@ -17,12 +17,13 @@ body {
 }
 
 .logo {
-  width: 40vw; 
-  max-width: 600px;
-  height: auto;
-  margin-bottom: 40px;
-  margin-top: 20px;
-  display: block;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 500px;
+  max-width: 90%;
+  z-index: 10;
 }
 
 .enter-button {
@@ -39,9 +40,9 @@ body {
 
 @keyframes glow {
   from {
-    text-shadow: 0 0 10px white, 0 0 20px #ff3c00;
+    text-shadow: 0 0 10px white, 0 0 20px #ff00bf;
   }
   to {
-    text-shadow: 0 0 20px white, 0 0 30px #ff0000, 0 0 40px #ff0000;
+    text-shadow: 0 0 20px white, 0 0 30px #ff00bf, 0 0 40px #ff00bf;
   }
 }
