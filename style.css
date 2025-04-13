@@ -12,7 +12,7 @@ body {
   .center {
     text-align: center;
     z-index: 1;
-    background-color: rgba(0, 0, 0, 0.5); /* sombra para contraste */
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 20px 40px;
     border-radius: 10px;
   }
@@ -34,7 +34,7 @@ body {
     top: 30px;
     left: 50%;
     transform: translateX(-50%);
-    width: 800px; /* ajusta o tamanho aqui se quiser */
-    scale: 100%;
+    width: 800px;
+    scale: 200%;
   }
   
