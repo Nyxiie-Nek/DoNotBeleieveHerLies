@@ -21,5 +21,6 @@ body {
     max-height: 100%;
     object-fit: cover;
     vertical-align: middle;
+    scale: 50%;
   }
   
