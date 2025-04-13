@@ -1,42 +1,21 @@
-@font-face {
-  font-family: 'Chalkduster';
-  src: url("fonts/Chalkduster.ttf") format("truetype");
+.body {
+  padding: 10px;
+  background: #000000;
+  color: #999999;
 }
 
-body {
-    background: url(img/mainbg.jpg) no-repeat center center fixed;
-    background-size: cover;
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    font-family: 'Courier New', monospace;
-  }
+.lvlcont {
+  vertical-align: central;
+  text-align: center;
+  padding: 5px;
+  overflow: hidden;
+  color: #999999;
+}
 
-  .center {
-    text-align: center;
-    z-index: 1;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px 40px;
-    border-radius: 10px;
-  }
-  
-  .enter {
-    font-family: 'Chalkduster', sans-serif;
-   font-size: 24px;
-    text-decoration: none;
-    color: white;
-    transition: color 0.3s;
-  }
-  
-  .enter:hover {
-    color: pink;
-    cursor: pointer;
-  }
-  
-  .logo {
-    vertical-align: top;
-    position: absolute;
-    width: 200px;
-    scale: 100%;
-  }
-  
+.lvlhead {
+  text-align: right;
+  padding: 1px;
+  padding-right: 8px;
+  font-size: 18px;
+  color: #808080;
+}
