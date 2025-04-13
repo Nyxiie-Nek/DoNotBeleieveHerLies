@@ -34,7 +34,6 @@ body {
     top: 30px;
     left: 50%;
     transform: translateX(-50%);
-    width: 200px; /* ajusta o tamanho aqui se quiser */
-    opacity: 0.9;
+    width: 500px; /* ajusta o tamanho aqui se quiser */
   }
   
