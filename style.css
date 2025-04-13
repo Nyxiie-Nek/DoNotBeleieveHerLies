@@ -38,7 +38,6 @@ body {
   .logo {
     vertical-align: top;
     position: absolute;
-    transform: translateX(-50%);
     width: 200px;
     scale: 100%;
   }
