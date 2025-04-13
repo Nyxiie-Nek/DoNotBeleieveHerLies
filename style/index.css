@@ -21,7 +21,7 @@ body {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 700px;
+  width: 900px;
   max-width: 100%;
   z-index: 10;
 }
