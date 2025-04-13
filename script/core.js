@@ -13,13 +13,15 @@ function getHint() {
   
   function initializeIframe() {
     const iframe = document.getElementById('a');
-    // Sempre começa com o primeiro nível
+    // Agora acessa diretamente o arquivo na mesma pasta
     iframe.src = "the-first-time.html";
   }
   
   function submitForm(event) {
     event.preventDefault();
     const input = document.getElementById('inputField').value.trim().toLowerCase().replace(/\s+/g, '-');
-    document.getElementById('a').src = `levels/${input}.html`;
+    // Acessa diretamente o HTML com base no nome da senha
+    document.getElementById('a').src = `${input}.html`;
   }
+  
   
