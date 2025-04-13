@@ -1,14 +1,14 @@
 @font-face {
-    font-family: 'Chalkduster';
-    src: url('/fonts/Chalkduster.ttf') format('truetype');
+    font-family: "Chalkduster";
+    src: url(/fonts/Chalkduster.ttf) format('truetype');
   }
   
   body {
     margin: 0;
     padding: 0;
-    background: url('/img/mainbg.jpg') no-repeat center center fixed;
+    background: url(/img/mainbg.jpg) no-repeat center center fixed;
     background-size: cover;
-    font-family: 'Chalkduster', cursive, sans-serif;
+    font-family: "Chalkduster", cursive, sans-serif;
   }
   
   .logo {
@@ -21,7 +21,7 @@
     display: block;
     margin: 100px auto;
     font-size: 48px;
-    font-family: 'Chalkduster', cursive;
+    font-family: "Chalkduster", cursive;
     color: white;
     background: none;
     border: none;
