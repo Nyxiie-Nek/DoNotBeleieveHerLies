@@ -8,9 +8,13 @@ body {
     height: 100vh;
   }
   
-h1 {
-    text-align: left;
-}
+  .lvlhead {
+    text-align: right;
+    padding: 1px;
+    padding-right: 8px;
+    font-size: 18px;
+    color: #808080;
+  }
 
 .levelcontent {
     max-width: 100%;
