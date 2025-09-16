@@ -1,21 +1,18 @@
 const image = document.getElementById("escapeImage");
-const video = document.getElementById("escapeVideo");
+const video = document.getElementById("Cutscene");
 
 let keySequence = [];
-const requiredSequence = ["r", "u", "n", "Enter"];
+const requiredSequence = ["d", "a", "e", "m", "o", "n", "i", "u", "m", "e", "g", "o", "v", "o", "c", "a", "v", "i", "t", "e", "Enter"];
 
 window.addEventListener("keydown", (e) => {
   const key = e.key.toLowerCase();
 
-  if (keySequence.length < 3 && ["r", "u", "n"].includes(key)) {
+  if (keySequence.length < 20 && ["d", "a", "e", "m", "o", "n", "i", "u", "m", "e", "g", "o", "v", "o", "c", "a", "v", "i", "t", "e"].includes(key)) {
     keySequence.push(key);
   } else if (key === "enter") {
     if (keySequence.join("") === "run") {
-      playVideo("lvl/51/escape/th3wayisshut.mp4", askPassword);
+      playVideo("lvl/51/escape/th3wayisshut.mp4",);
     }
-    keySequence = [];
-  } else {
-    keySequence = [];
   }
 });
 
